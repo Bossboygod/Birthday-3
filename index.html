@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="style.css"  type="text/css" rel="stylesheet">
+        <div class="topnav">
+            <a class="active" href="Epistle Proper.html">SUPRISE PROPER</a>
+        </div>
+    </head>
+    <body>
+        <h1>HAPPY BIRTHDAY LOVE</h1>
+        <h2>IDOWU FAITH OLUWADAMILOLA</h2>
+        <div class="slideshow-container" style="max-width:100%" height="auto">
+            <img class="mySlides" src="IMG-20200220-WA0001.jpg" style="width:100%" height="auto">
+            <div class="text">I LOVE YOUUUUUUUU</div>
+            <img class="mySlides" src="IMG-20191108-WA0007.jpg" style="width:100%" height="auto">
+            <img class="mySlides" src="IMG-20200214-WA0027.jpg" style="width:100%" height="auto">
+            <img class="mySlides" src="Screenshot_20200102-182238.png" style="width: 100%" height="auto">
+            <img class="mySlides" src="IMG-20190902-WA0001.jpg" style="width: 100%" height="auto">
+            <img class="mySlides" src="a.jpg" style="width: 100%" height="auto">
+            <img class="mySlides" src="IMG-20190902-WA0003.jpg" style="width: 100%" height="auto">
+            <img class="mySlides" src="IMG-20190902-WA0005.jpg" style="width: 100%" height="auto">
+            <img class="mySlides" src="Screenshot_20200224-000753.png" style="width: 100%" height="auto">
+            <img class="mySlides" src="IMG-20200214-WA0030.jpg" style="width: 100%" height="auto">
+            <img class="mySlides" src="IMG-20190121-WA0028.jpg" style="width: 100%" height="auto">
+            
+        </div>
+          
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+        </script>
+    </body>
+</HTML>
